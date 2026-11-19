@@ -1,0 +1,14 @@
+{
+  "project_name": "my-enterprise-repo",
+  "version": "1.0.0",
+  "governance": {
+    "tier": "enterprise-standard",
+    "zero_data_retention": true,
+    "sandbox_enabled": true
+  },
+  "hooks": {
+    "pre_edit": ".gemini/hooks/pre-edit-check.sh",
+    "post_edit": ".gemini/hooks/post-edit-lint.sh",
+    "production_gate": ".gemini/hooks/production-gate.sh"
+  }
+}
